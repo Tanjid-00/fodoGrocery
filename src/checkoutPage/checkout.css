@@ -1,0 +1,36 @@
+#checkoutBgImg {
+  background: linear-gradient(to right, #000000ac, #0000007d),
+    url("/assets/images/sec1/banner3.jpg");
+
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+#sec1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#orderBtn {
+  background: var(--green);
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  transition: 0.4s;
+}
+#orderBtn:hover {
+  background: #27273a;
+}
+@media screen and (min-width: 768px) {
+  #sec1 {
+    flex-direction: row;
+  }
+  #left {
+    width: 66.66%;
+  }
+  #right {
+    width: 33.33%;
+  }
+}

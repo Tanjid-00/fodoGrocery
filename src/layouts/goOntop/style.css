@@ -1,0 +1,16 @@
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  height: 50px;
+  width: 50px;
+  background: #17b517;
+  color: white;
+  border-radius: 100%;
+  border: none;
+  padding: 10px;
+  z-index: 99;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

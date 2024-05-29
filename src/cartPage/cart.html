@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  -->
+    <link rel="stylesheet" href="/src/layouts/goOntop/style.css" />
+    <link rel="stylesheet" href="/src/cartPage/cart.css" />
+    <title>Cart</title>
+  </head>
+  <body class="bg-secondary-subtle">
+    <div id="navMenuBar" class="sticky-md-top"></div>
+
+    <div
+      id="cartBgImg"
+      class="text-white p-3 d-flex flex-column justify-content-center"
+    >
+      <div
+        class="container-xxl d-flex flex-column justify-content-center flex-md-row justify-content-md-between align-items-md-center"
+      >
+        <h4 class="fs-1">Shopping Cart</h4>
+        <ul class="hstack gap-5">
+          <li>
+            <a
+              class="text-decoration-none text-white fw-bold"
+              href="/src/homePage/index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-decoration-none text-white fw-bold"
+              href="/src/cartPage/cart.html"
+              >Shopping Cart</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="container-xxl py-5 p-4">
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>IMAGE</th>
+              <th>PRODUCT NAME</th>
+              <th>UNIT PRICE</th>
+              <th>QTY</th>
+              <th>SUBTOTAL</th>
+              <th>ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img id="tdImg" src="/assets/images/sec1/img1.png" alt="" />
+              </td>
+              <td class="fw-bold">Name</td>
+              <td>$260.00</td>
+              <td id="qtyBtn" class="text-nowrap">
+                <button>-</button>
+                <input style="width: 80px" type="number" name="" id="" />
+                <button>+</button>
+              </td>
+              <td>$260.00</td>
+              <td>x</td>
+            </tr>
+            <tr>
+              <td>
+                <img id="tdImg" src="/assets/images/sec1/img2.png" alt="" />
+              </td>
+              <td class="fw-bold">Name</td>
+              <td>$260.00</td>
+              <td id="qtyBtn" class="text-nowrap">
+                <button>-</button>
+                <input style="width: 80px" type="number" name="" id="" />
+                <button>+</button>
+              </td>
+              <td>$260.00</td>
+              <td>x</td>
+            </tr>
+            <tr>
+              <td>
+                <img id="tdImg" src="/assets/images/sec1/img3.png" alt="" />
+              </td>
+              <td class="fw-bold">Name</td>
+              <td>$260.00</td>
+              <td id="qtyBtn" class="text-nowrap">
+                <button>-</button>
+                <input style="width: 80px" type="number" name="" id="" />
+                <button>+</button>
+              </td>
+              <td>$260.00</td>
+              <td>x</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="hstack justify-content-between py-3">
+        <button class="cartBtn">CONTINUE SHOPPING</button>
+        <button class="cartBtn">UPDATE CART</button>
+      </div>
+
+      <div id="cartDivs" class="py-3">
+        <div id="cartDiv1">
+          <ul class="list-group list-group-item-secondary">
+            <li class="list-group-item list-group-item-dark">
+              <h5>Order Total</h5>
+            </li>
+            <li class="list-group-item">
+              <ul class="list-unstyled">
+                <li class="hstack justify-content-between align-items-center">
+                  <h5>Subtotal</h5>
+                  <p>$250.00</p>
+                </li>
+                <li class="hstack justify-content-between align-items-center">
+                  <h5>Taxes</h5>
+                  <p>$250.00</p>
+                </li>
+              </ul>
+            </li>
+            <li class="list-group-item">
+              <div class="hstack justify-content-between align-items-center">
+                <h4>Grand Total</h4>
+                <p>$250.00</p>
+              </div>
+              <button class="cartBtn w-100">PROCEED TO CHECKOUT</button>
+            </li>
+          </ul>
+        </div>
+        <div id="cartDiv2">
+          <ul class="list-group list-group-item-secondary">
+            <li class="list-group-item fw-semibold">Use Coupon Code</li>
+            <li class="list-group-item">
+              <p>Have a Coupon Code?</p>
+
+              <input
+                class="w-100 p-3 border border-1 border-secondary"
+                style="outline: none"
+                type="text"
+                name=""
+                id=""
+              />
+            </li>
+            <li class="list-group-item">
+              <button class="cartBtn">Apply</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div id="footerPart"></div>
+
+    <!--  -->
+    <button id="back-to-top">↑</button>
+
+    <script src="/src/layouts/goOntop/script.js"></script>
+    <script src="/src/other/contentLoad.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

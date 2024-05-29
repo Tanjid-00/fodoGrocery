@@ -1,0 +1,42 @@
+:root {
+  --green: green;
+}
+#wishListBgImg {
+  background: linear-gradient(to right, #000000ac, #0000007d),
+    url("/assets/images/sec1/banner3.jpg");
+
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+main table {
+  width: 100%;
+}
+tr th,
+tr td {
+  border: 1px solid gray;
+  text-align: center;
+}
+main table thead {
+  background: var(--green);
+  color: white;
+}
+main table thead tr th {
+  padding: 20px;
+}
+
+#tdImg {
+  width: 100px;
+}
+
+#addBtn {
+  background: var(--green);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+}
+@media screen and (min-width: 768px) {
+  #tdImg {
+    width: 150px;
+  }
+}

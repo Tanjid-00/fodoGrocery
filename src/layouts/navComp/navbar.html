@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/src/layouts/navComp/style.css" />
+
+    <title>Navbar</title>
+  </head>
+  <body>
+    <div class="bg-white p-3 p-md-4 sticky-md-top shadow-sm">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg container-xxl d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center"
+      >
+        <a class="navbar-brand" href="/src/index.html">
+          <img
+            id="logo"
+            src="../../../assets/images/sec2/fodoLogo.png"
+            alt=""
+          />
+        </a>
+
+        <div
+          class="offcanvas offcanvas-start ps-lg-5"
+          tabindex="-1"
+          id="navbarOffcanvasLg"
+          aria-labelledby="navbarOffcanvasLgLabel"
+        >
+          <div class="offcanvas-header">
+            <img
+              class="m-auto"
+              src="../../../assets/images/sec2/fodoLogo.png"
+              alt=""
+            />
+            <button
+              id="btnClose"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="offcanvasBody" class="offcanvas-body pt-3">
+            <ul
+              id="navMenus"
+              class="d-flex flex-column jus flex-lg-row list-unstyled gap-3"
+            >
+              <li id="dropDownMenuItems" class="dropdown">
+                <button
+                  class="w-100 border-0 bg-transparent text-start d-flex justify-content-between align-items-center"
+                  id="menuDropdownBtn"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                >
+                  <span> Home+</span>
+                  <i class="fa-solid fa-chevron-down d-lg-none"></i>
+                </button>
+                <ul
+                  id="dropdownMenu"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a class="dropdown-item" href="/src/index.html"
+                      >Home Style 01</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Home Style 02</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Home Style 03</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="dropDownMenuItems" class="d-lg-none">
+                <button
+                  id="menuDropdownBtn"
+                  class="text-decoration-none text-black w-100 border-0 bg-transparent text-start"
+                >
+                  About Us
+                </button>
+              </li>
+              <li id="dropDownMenuItems" class="dropdown">
+                <button
+                  class="w-100 border-0 bg-transparent text-start d-flex justify-content-between align-items-center"
+                  id="menuDropdownBtn"
+                  data-bs-auto-close="outside"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                >
+                  <span> Page+</span>
+                  <i class="fa-solid fa-chevron-down d-lg-none"></i>
+                </button>
+                <ul
+                  id="dropdownMenu"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li id="dropDownMenuItemsChild" class="dropdown">
+                    <button
+                      class="w-100 border-0 bg-transparent text-start ps-3 d-flex justify-content-between align-items-center"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>Team</span>
+                      <i class="fa-solid fa-chevron-down text-secondary"></i>
+                    </button>
+                    <ul
+                      id="dropdownMenuChild"
+                      class="dropdown-menu ps-3 ps-lg-0"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Team Style 01</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Team Style 02</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">About Us</a></li>
+                  <li><a class="dropdown-item" href="#">Pricing Plan</a></li>
+                  <li id="dropDownMenuItemsChild" class="dropdown">
+                    <button
+                      class="w-100 border-0 bg-transparent text-start ps-3 d-flex justify-content-between align-items-center"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>Services</span>
+                      <i class="fa-solid fa-chevron-down text-secondary"></i>
+                    </button>
+                    <ul
+                      id="dropdownMenuChild"
+                      class="dropdown-menu ps-3 ps-lg-0"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Services</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Services Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="dropDownMenuItemsChild" class="dropdown">
+                    <button
+                      class="w-100 border-0 bg-transparent text-start ps-3 d-flex justify-content-between align-items-center"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>Portfolio</span>
+                      <i class="fa-solid fa-chevron-down text-secondary"></i>
+                    </button>
+                    <ul
+                      id="dropdownMenuChild"
+                      class="dropdown-menu ps-3 ps-lg-0"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Portfolio</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Portfolio Details</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="dropDownMenuItemsChild" class="dropdown">
+                    <button
+                      class="w-100 border-0 bg-transparent text-start ps-3 d-flex justify-content-between align-items-center"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>Shop</span>
+                      <i class="fa-solid fa-chevron-down text-secondary"></i>
+                    </button>
+                    <ul
+                      id="dropdownMenuChild"
+                      class="dropdown-menu ps-3 ps-lg-0"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Cart</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Checkout</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">Wishlist</a></li>
+                    </ul>
+                  </li>
+                  <li id="dropDownMenuItemsChild" class="dropdown">
+                    <button
+                      class="w-100 border-0 bg-transparent text-start ps-3 d-flex justify-content-between align-items-center"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                    >
+                      <span>User</span>
+                      <i class="fa-solid fa-chevron-down text-secondary"></i>
+                    </button>
+                    <ul
+                      id="dropdownMenuChild"
+                      class="dropdown-menu ps-3 ps-lg-0"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/src/loginRegisterPage/login.html"
+                          >Login</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="/src/loginRegisterPage/register.html"
+                          >Register</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Forget Password</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">My Account</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/cartPage/cart.html"
+                      >Shopping Cart</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/src/wishlistPage/wishlist.html"
+                      >Wishlist</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/src/checkoutPage/checkout.html"
+                      >Chekckout</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">404 Error</a></li>
+                </ul>
+              </li>
+              <li id="dropDownMenuItems" class="dropdown">
+                <button
+                  class="w-100 border-0 bg-transparent text-start d-flex justify-content-between align-items-center"
+                  id="menuDropdownBtn"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                >
+                  <span> Shop+</span>
+                  <i class="fa-solid fa-chevron-down d-lg-none"></i>
+                </button>
+                <ul
+                  id="dropdownMenu"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li><a class="dropdown-item" href="#">Shop</a></li>
+                  <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shop 2 Columns</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shop Left Sidebar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shop Right Sidebar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Single Products</a>
+                  </li>
+                </ul>
+              </li>
+              <li id="dropDownMenuItems" class="dropdown">
+                <button
+                  class="w-100 border-0 bg-transparent text-start d-flex justify-content-between align-items-center"
+                  id="menuDropdownBtn"
+                  aria-expanded="false"
+                  data-bs-toggle="dropdown"
+                >
+                  <span>Blog+</span>
+                  <i class="fa-solid fa-chevron-down d-lg-none"></i>
+                </button>
+                <ul
+                  id="dropdownMenu"
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li><a class="dropdown-item" href="#">Blog </a></li>
+                  <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Blog Left Sidebar</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Blog Right Sidebar</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                </ul>
+              </li>
+              <li id="dropDownMenuItems" class="dropdown">
+                <a
+                  href="#"
+                  id="menuDropdownBtn"
+                  class="text-decoration-none text-black"
+                  >Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="navIcons" class="d-flex gap-3">
+          <button
+            type="button"
+            class="d-lg-none"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <i class="fa-solid fa-cart-plus"></i>
+          </button>
+
+          <button>
+            <a href="/src/wishlistPage/wishlist.html">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </button>
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasSearch"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <i class="fa-solid fa-search"></i>
+          </button>
+          <button>
+            <a
+              class="text-decoration-none"
+              href="/src/loginRegisterPage/login.html"
+            >
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </button>
+        </div>
+      </nav>
+      <div
+        class="offcanvas offcanvas-end"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+        style="width: 370px"
+      >
+        <div class="offcanvas-header pb-0">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            SHOPPING CART
+          </h5>
+          <i
+            id="cartCloseButton"
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></i>
+        </div>
+        <hr />
+        <div class="offcanvas-body">
+          <ul class="list-unstyled list-group">
+            <li class="">
+              <div
+                class="d-flex justify-content-start align-items-center gap-2"
+              >
+                <div class="">
+                  <img
+                    class="p-1"
+                    style="width: 80px"
+                    src="../../../assets/images/sec1/img5.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-1">
+                  <a
+                    href="/src/singleProduct/product.html"
+                    class="text-decoration-none"
+                  >
+                    <h6 class="text-dark-emphasis">Fresh Red Seedless</h6></a
+                  >
+
+                  <div
+                    class="d-flex justify-content-between align-items-center text-secondary"
+                  >
+                    <div><span>$39</span> x <span>2</span></div>
+                    <i id="cartItemRmBtn" class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr />
+            <li class="">
+              <div
+                class="d-flex justify-content-start align-items-center gap-2"
+              >
+                <div class="">
+                  <img
+                    class="p-1"
+                    style="width: 80px"
+                    src="../../../assets/images/sec1/img6.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-1">
+                  <a
+                    href="/src/singleProduct/product.html"
+                    class="text-decoration-none"
+                  >
+                    <h6 class="text-dark-emphasis">Fresh Red Seedless</h6></a
+                  >
+
+                  <div
+                    class="d-flex justify-content-between align-items-center text-secondary"
+                  >
+                    <div><span>$39</span> x <span>2</span></div>
+                    <i id="cartItemRmBtn" class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr />
+            <li class="">
+              <div
+                class="d-flex justify-content-start align-items-center gap-2"
+              >
+                <div class="">
+                  <img
+                    class="p-1"
+                    style="width: 80px"
+                    src="../../../assets/images/sec1/img7.png"
+                    alt=""
+                  />
+                </div>
+                <div class="p-1">
+                  <a
+                    href="/src/singleProduct/product.html"
+                    class="text-decoration-none"
+                  >
+                    <h6 class="text-dark-emphasis">Fresh Red Seedless</h6></a
+                  >
+
+                  <div
+                    class="d-flex justify-content-between align-items-center text-secondary"
+                  >
+                    <div><span>$39</span> x <span>2</span></div>
+                    <i id="cartItemRmBtn" class="fa-solid fa-xmark"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <hr />
+          </ul>
+          <div id="cartBottom" class="vstack gap-4">
+            <div class="hstack justify-content-between align-items-center">
+              <h4>SubTotal:</h4>
+              <h4>$203.00</h4>
+            </div>
+
+            <a
+              class="text-decoration-none text-center"
+              href="/src/cartPage/cart.html"
+              >VIEW CART</a
+            >
+            <!-- <button id="goToCartBtn">cart</button> -->
+
+            <!-- <button>CHECKOUT NOW</button> -->
+            <a
+              id="checkoutBtn"
+              class="text-decoration-none text-center"
+              href="/src/checkoutPage/checkout.html"
+              >CHECKOUT NOW</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="offcanvas offcanvas-end"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasSearch"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            SEARCH
+          </h3>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <hr />
+        <div class="offcanvas-body">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control p-2 bg-secondary-subtle"
+              placeholder="search..."
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <span
+              class="input-group-text"
+              id="basic-addon2"
+              style="background: var(--green)"
+            >
+              <i class="fa-solid fa-search text-white"></i>
+            </span>
+          </div>
+          <div id="searchSuggetions" class="pt-2">
+            <h5>Recent Searches</h5>
+            <div>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Food
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Grocery
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Health
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Orange
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Junk
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Shopping
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Snacks
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Keyboard
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Mouse
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Smartphones
+              </p>
+            </div>
+          </div>
+
+          <div id="searchSuggetions" class="pt-2">
+            <h5>Popular Searches</h5>
+            <div>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Food
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Grocery
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Health
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Orange
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Junk
+              </p>
+              <p class="badge bg-secondary-subtle px-3 py-2 fw-semibold">
+                Shopping
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

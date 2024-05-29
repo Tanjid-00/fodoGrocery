@@ -1,0 +1,101 @@
+:root {
+  --green: #7bae00;
+}
+
+#cartBgImg {
+  background: linear-gradient(to right, #000000ac, #0000007d),
+    url("/assets/images/sec1/banner3.jpg");
+
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+/* ///////// */
+#qtyBtn button {
+  background: var(--green);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+main table {
+  width: 100%;
+}
+tr th,
+tr td {
+  border: 1px solid gray;
+  text-align: center;
+}
+main table thead {
+  background: var(--green);
+  color: white;
+}
+main table thead tr th {
+  padding: 20px;
+}
+
+#tdImg {
+  width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  #tdImg {
+    width: 150px;
+  }
+}
+/* ------------- */
+
+#table1 #thead #theadTr {
+  background: var(--green) !important;
+}
+
+#table1 tbody tr td img {
+  width: 60px;
+}
+#table1 tbody tr td button {
+  border: 1px solid var(--green);
+  background: var(--green);
+  color: white;
+  padding: 5px;
+  width: 30px;
+}
+#table1 tbody tr td input {
+  border: 1px solid var(--green);
+  outline: none;
+  padding: 5px;
+}
+@media screen and (min-width: 768px) {
+  #table1 tbody tr td img {
+    width: 100px;
+  }
+}
+
+.cartBtn {
+  border: none;
+  background: var(--green);
+  padding: 10px 20px;
+  color: white;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.cartBtn:hover {
+  background: #262338;
+}
+/* ----------------- cartDivs */
+
+#cartDivs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  #cartDivs {
+    flex-direction: row-reverse;
+  }
+  #cartDiv1 {
+    width: 25%;
+  }
+  #cartDiv2 {
+    width: 75%;
+  }
+}

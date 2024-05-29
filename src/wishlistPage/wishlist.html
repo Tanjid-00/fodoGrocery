@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/layouts/goOntop/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/src/wishlistPage/style.css" />
+    <!-- swiffy -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@latest/dist/css/swiffy-slider.min.css"
+    />
+    <title>Product</title>
+  </head>
+  <body class="bg-secondary-subtle">
+    <div id="navMenuBar" class="sticky-md-top"></div>
+
+    <main class="py-5 px-md-4 container-xxl">
+      <div
+        id="wishListBgImg"
+        class="text-white p-3 d-flex flex-column mb-5 justify-content-center"
+      >
+        <div
+          class="container-xxl d-flex flex-column justify-content-center flex-md-row justify-content-md-between align-items-md-center"
+        >
+          <h4 class="fs-1">Shopping Cart</h4>
+          <ul class="hstack gap-5">
+            <li>
+              <a
+                class="text-decoration-none text-white fw-bold"
+                href="/src/homePage/index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-decoration-none text-white fw-bold"
+                href="/src/wishlistPage/wishlist.html"
+                >Wishlist</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="">
+          <thead>
+            <tr>
+              <th scope="col">IMAGE</th>
+              <th scope="col">NAME</th>
+              <th scope="col">PRICE</th>
+              <th scope="col">STOCK</th>
+              <th>ADD</th>
+              <th>ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img id="tdImg" src="/assets/images/sec1/img1.png" alt="" />
+              </td>
+              <td class="fw-bold">Name</td>
+              <td>$260.00$</td>
+              <td>In Stock</td>
+              <td>
+                <button id="addBtn">ADD</button>
+              </td>
+              <td class="fw-bold">x</td>
+            </tr>
+            <tr>
+              <td>
+                <img id="tdImg" src="/assets/images/sec1/img2.png" alt="" />
+              </td>
+              <td class="fw-bold">Name</td>
+              <td>$260.00$</td>
+              <td>In Stock</td>
+              <td>
+                <button id="addBtn">ADD</button>
+              </td>
+              <td class="fw-bold">x</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <div id="footerPart"></div>
+
+    <!--  -->
+    <button id="back-to-top">↑</button>
+
+    <!-- swiffy -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@latest/dist/js/swiffy-slider.min.js"></script>
+
+    <script src="/src/layouts/goOntop/script.js"></script>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/other/contentLoad.js"></script>
+    <script src="/src/singleProduct/script.js"></script>
+  </body>
+</html>

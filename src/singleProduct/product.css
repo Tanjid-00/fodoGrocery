@@ -1,0 +1,175 @@
+:root {
+  --green: #7bae00;
+}
+
+#cartBgImg {
+  background: linear-gradient(to right, #000000ac, #0000007d),
+    url("/assets/images/sec1/banner3.jpg");
+
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+#singleProductImg {
+  width: 350px;
+  margin: 0 auto;
+}
+.roundDiv {
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.roundDiv:hover {
+  border: 5px solid black;
+}
+#addToCart button {
+  background: var(--green);
+  border: none;
+  height: 40px;
+  width: 30px;
+  color: white;
+}
+#addToCart input {
+  height: 40px;
+  outline: none;
+  border: 1px solid var(--green);
+  text-align: center;
+}
+#sec1AddToCartBtn {
+  background: var(--green);
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  width: fit-content;
+}
+#sec1AddToCartBtn:hover {
+  background: #211e34;
+}
+.shareIcons {
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.shareIcons:hover {
+  color: white;
+  background: var(--green);
+  transform: translateY(-5px);
+}
+
+/* --------------------------------------------- sec 2 */
+.description {
+  display: none; /* Hide all descriptions by default */
+}
+
+.description.active {
+  display: block; /* Show the active description */
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.links a.active {
+  border-bottom: 2px solid crimson;
+}
+
+/* ------------------------------------------------- sec 3 */
+
+#addToCartBtn {
+  padding: 10px 30px;
+  width: fit-content;
+  margin: 0 auto;
+  border: none;
+  background: #ffffff;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  box-shadow: 0 0 10px #b1b1b1;
+  text-wrap: nowrap;
+}
+#addToCartBtn:hover {
+  background: var(--green);
+  color: white;
+}
+
+#productImg {
+  transition-duration: 0.4s;
+}
+.buy-button {
+  opacity: 0;
+  transform: translateY(40px); /* Button initially shifted up by 10px */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card:hover .buy-button {
+  opacity: 1;
+  transform: translateY(0); /* Button moves to its original position */
+}
+.card:hover #productImg {
+  transform: scale(1.1) rotate(15deg);
+}
+#productCardBadge {
+  background: var(--green);
+  padding: 5px 15px;
+  color: white;
+}
+#productCardIcon {
+  background: var(--green);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  right: 10px;
+  top: 10px;
+}
+
+#productCardIcon2 {
+  background: var(--green);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  right: 10px;
+  top: 80px;
+  opacity: 0;
+  transform: translateY(10px); /* Button initially shifted up by 10px */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card:hover #productCardIcon2 {
+  opacity: 1;
+  z-index: 10;
+  transform: translateY(0); /* Button moves to its original position */
+}
+
+/* -------------- */
+
+#productImg {
+  max-width: 200px;
+}
+
+/* Default: show 4 items */
+.swiffy-slider.slider-item-show4 .slider-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.swiffy-slider.slider-item-show4 .slider-container li {
+  flex: 0 0 48%; /* Each item takes 25% of the width */
+}
+
+/* Small screens: show 2 items */
+@media (min-width: 768px) {
+  .swiffy-slider.slider-item-show2-sm .slider-container li {
+    flex: 0 0 24%; /* Each item takes 50% of the width */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #productImg {
+    width: 450px;
+    margin: 0 auto;
+  }
+}

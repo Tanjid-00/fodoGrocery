@@ -1,0 +1,135 @@
+:root {
+  --green: #7bae00;
+}
+button,
+a,
+.dropdown {
+  cursor: pointer;
+}
+/* ----- */
+
+#cartBottom button,
+#cartBottom a {
+  padding: 12px;
+  border: 1px solid gray;
+  font-weight: 500;
+  background: white;
+  transition: 0.4s;
+  color: black;
+}
+/* #cartBottom button:nth-child(3) {
+  background: var(--green);
+  color: white;
+} */
+#cartBottom #checkoutBtn {
+  background: var(--green);
+  color: white;
+}
+#cartBottom #checkoutBtn:hover {
+  background: #34304b;
+  color: white;
+}
+#cartBottom a:hover {
+  background: #34304b;
+  color: white;
+}
+
+#cartItemRmBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5px;
+  height: 25px;
+  width: 25px;
+  background: #c1c1c1ba;
+  border-radius: 100%;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+#cartItemRmBtn:hover {
+  background: var(--green);
+  color: white;
+}
+
+#navIcons button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  padding: 7px;
+  box-shadow: 0 0 7px gray;
+  background: white;
+  color: #363636;
+  transition-duration: 0.4s;
+}
+#navIcons button:hover {
+  background: var(--green);
+  color: white;
+}
+#navIcons button a {
+  color: black;
+}
+#navIcons button:hover a {
+  color: white;
+}
+
+#navbarOffcanvasLg {
+  width: 300px;
+}
+.navMenus {
+  transition-duration: 0.4s;
+}
+#dropDownMenuItems {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #a8a8a8;
+}
+#dropdownMenu,
+#dropdownMenuChild {
+  position: relative;
+}
+#menuDropdownBtn {
+  font-weight: 500;
+}
+
+/* //////////////////// cart */
+
+@media screen and (min-width: 768px) {
+  #navbar {
+    padding: 0 5rem;
+  }
+  #dropdownMenu {
+    position: absolute;
+    border-top: 7px solid var(--green);
+    /* top: 65px; */
+  }
+  #dropdownMenuChild {
+    position: absolute;
+    border-top: 7px solid var(--green);
+    left: 158px;
+  }
+
+  #menuDropdownBtn:hover + #dropdownMenu,
+  #dropdownMenu:hover {
+    display: block;
+  }
+  #dropDownMenuItems {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  #navbar {
+    padding: 0 30px;
+  }
+}
+
+/* ------------------------------- searchSuggetions */
+#searchSuggetions p {
+  cursor: pointer;
+  color: black;
+  transition: 0.4s;
+}
+#searchSuggetions p:hover {
+  outline: 1px solid var(--green);
+  color: var(--green);
+}

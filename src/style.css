@@ -1,0 +1,497 @@
+:root {
+  --green: #7bae00;
+}
+button,
+a,
+.dropdown {
+  cursor: pointer;
+}
+section {
+  margin: 0 auto 3rem;
+}
+
+#shopViewSubsBtn {
+  background: var(--green);
+  padding: 15px 30px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  width: fit-content;
+}
+#shopViewSubsBtn:hover {
+  background: #383c41;
+}
+@media screen and (min-width: 576px) {
+  section {
+    margin-bottom: 3rem;
+    max-width: 576px;
+  }
+  #sec1 {
+    max-width: 1400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    margin-bottom: 5rem;
+    max-width: 768px;
+  }
+  #sec1 {
+    max-width: 1400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    max-width: 1400px;
+  }
+}
+/* ------------------------------------------- navbar */
+
+#navIcons button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  padding: 7px;
+  box-shadow: 0 0 7px gray;
+  background: white;
+  color: #363636;
+  transition-duration: 0.4s;
+}
+#navIcons button:hover {
+  background: var(--green);
+  color: white;
+}
+
+#navbarOffcanvasLg {
+  width: 300px;
+}
+.navMenus {
+  transition-duration: 0.4s;
+}
+#dropDownMenuItems {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #a8a8a8;
+}
+#dropdownMenu,
+#dropdownMenuChild {
+  position: relative;
+}
+#menuDropdownBtn {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  #navbar {
+    padding: 0 5rem;
+  }
+  #dropdownMenu {
+    position: absolute;
+    border-top: 7px solid var(--green);
+    /* top: 65px; */
+  }
+  #dropdownMenuChild {
+    position: absolute;
+    border-top: 7px solid var(--green);
+    left: 158px;
+  }
+
+  #menuDropdownBtn:hover + #dropdownMenu,
+  #dropdownMenu:hover {
+    display: block;
+  }
+  #dropDownMenuItems {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  #navbar {
+    padding: 0 30px;
+  }
+}
+
+/* ------------------------------------------------------ Main */
+
+#container1,
+#container2 {
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  #container1,
+  #container2 {
+    padding: 30px;
+  }
+}
+
+/* @media screen and (min-width: 992px) {
+  #main {
+    padding: 30px;
+  }
+}
+/* ----------------------------------------- Sec - 1 */
+#left #table1 {
+  width: 600px;
+}
+#left #menuList {
+  line-height: 32.3px;
+}
+
+#left #table2 {
+  width: 500px;
+}
+#left #table3 {
+  width: 300px;
+}
+#hmmBtn {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.sec1Carouseltem {
+  height: 360px;
+  border-radius: 5px;
+}
+.sec1Carouseltem .carousel-caption {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  .sec1Carouseltem {
+    height: 465px;
+  }
+  .sec1Carouseltem .carousel-caption {
+    margin-bottom: 100px;
+    margin-left: -50px;
+  }
+  .sec1Carouseltem .carousel-caption > h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ----------------------------------------- Sec - 2 */
+#sec2Icon {
+  color: #2d2d2d;
+  background: #9e9e9e52;
+  padding: 12px;
+  font-size: 1.7rem;
+  border-radius: 100%;
+  transition-duration: 0.4s;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+}
+#sec2Col:hover #sec2Icon {
+  background: var(--green);
+  color: white;
+}
+/* ----------------------------------------- Sec - 3 */
+#sec3Img {
+  transition-duration: 0.4s;
+}
+#sec3Img:hover {
+  transform: scale(1.2);
+}
+
+/* ----------------------------------------- Sec - 4 */
+
+#addToCartBtn {
+  padding: 10px 30px;
+  width: fit-content;
+  margin: 0 auto;
+  border: none;
+  background: white;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  box-shadow: 0 0 10px #b1b1b1;
+  text-wrap: nowrap;
+}
+#addToCartBtn:hover {
+  background: var(--green);
+  color: white;
+}
+
+#productImg {
+  transition-duration: 0.4s;
+}
+.buy-button {
+  opacity: 0;
+  transform: translateY(40px); /* Button initially shifted up by 10px */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card:hover .buy-button {
+  opacity: 1;
+  transform: translateY(0); /* Button moves to its original position */
+}
+.card:hover #productImg {
+  transform: scale(1.1) rotate(15deg);
+}
+#productCardBadge {
+  background: var(--green);
+  padding: 5px 15px;
+  color: white;
+}
+#productCardIcon {
+  background: var(--green);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  right: 10px;
+  top: 10px;
+}
+
+#productCardIcon2 {
+  background: var(--green);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  right: 10px;
+  top: 80px;
+  opacity: 0;
+  transform: translateY(10px); /* Button initially shifted up by 10px */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.card:hover #productCardIcon2 {
+  opacity: 1;
+  z-index: 10;
+  transform: translateY(0); /* Button moves to its original position */
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* ----------------------------------------- Sec - 5 */
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 10px;
+}
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.card {
+  border: none;
+}
+@media (min-width: 992px) {
+  /* Large screens */
+  .carousel-item .row {
+    flex-direction: row;
+  }
+  .carousel-item .col-lg-6 {
+    display: flex;
+    align-items: center;
+  }
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* ----------------------------------------- Sec - 6 */
+#sec6h1 {
+  font-size: 40px;
+  color: #a4ff1d;
+}
+#sec6BgImg {
+  background-image: url(../../assets/images/sec1/banner3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+@media screen and (min-width: 768px) {
+  #sec6CardElement {
+    width: 50%;
+  }
+  #sec6h1 {
+    font-size: 80px;
+    color: #a4ff1d;
+  }
+  #sec6BgImg {
+    height: 400px;
+  }
+}
+
+/* ----------------------------------------- Sec - 7 */
+#sec7BgImg {
+  background-image: url(../../assets/images/sec1/banner4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 576px) {
+  #sec7BgImg {
+    height: 230px;
+  }
+}
+/* ----------------------------------------- Sec - 8 */
+
+/* Default: show 4 items */
+.swiffy-slider.slider-item-show4 .slider-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.swiffy-slider.slider-item-show4 .slider-container li {
+  flex: 0 0 48%; /* Each item takes 25% of the width */
+}
+
+/* Small screens: show 2 items */
+@media (min-width: 768px) {
+  .swiffy-slider.slider-item-show2-sm .slider-container li {
+    flex: 0 0 24%; /* Each item takes 50% of the width */
+  }
+}
+
+/* ------------------------------------------ middle div with full width bg color */
+#fullWidthSect9 {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+#callBtn {
+  background: white;
+  width: fit-content;
+  color: var(--green);
+}
+#callBtn:hover {
+  background: var(--green);
+  color: white;
+}
+/* ----------------------------------------- Sec - 9 */
+#img {
+  transition-duration: 0.4s;
+}
+#inner {
+  overflow: hidden;
+}
+#sec9Card:hover #img {
+  transform: scale(1.3) rotate(5deg);
+}
+#date {
+  position: absolute;
+  background: white;
+  padding: 15px;
+  bottom: -17px;
+}
+#userImg {
+  width: 50px;
+  border-radius: 100%;
+}
+#vogueLink {
+  color: black;
+}
+#vogueLink:hover {
+  color: var(--green);
+}
+#arrowRightBtn {
+  background: var(--green);
+  transition-duration: 0.4s;
+  color: white;
+}
+#arrowRightBtn:hover {
+  background: #4d4d4d;
+}
+/* ----------------------------------------- Sec - 10 */
+
+#sect10 .carousel {
+  position: relative;
+}
+#sect10 .carousel-indicators {
+  position: absolute;
+  bottom: -60px; /* Adjust this value to move the indicators further down */
+  left: 35%;
+  transform: translateX(-50%);
+}
+
+#sect10 #carouselExampleDark {
+  max-width: 550px;
+  margin: 0 auto;
+}
+#btns button {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background: var(--green);
+  border: 1px solid black;
+}
+/* ----------------------------------------- Sec - 11 */
+/* ----------------------------------------- Sec - 12 */
+/* ----------------------------------------- Sec - 13 */
+
+/* -------------------------------------------------------- Footer */
+
+footer {
+  overflow: hidden;
+}
+footer a:hover {
+  border-bottom: 1px solid gray;
+}
+
+#upperFooter {
+  background: #172029;
+}
+#upperPart {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.emailIcon {
+  font-size: 4rem;
+}
+#emailInp {
+  background: #233241;
+  outline: none;
+  border: none;
+}
+#subsBtn {
+  background: green;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  #emailInp {
+    width: 400px;
+  }
+}
+
+/* ---------- Lowerpart */
+#lowerFooter {
+  background: black;
+}
+#lowerPart {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#lowerPart a {
+  text-decoration: none;
+  color: #6c757d;
+}
+#lowerPart i {
+  color: green;
+}
+
+#payImg img {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+/* ------------------------------------------------------------------------- Other */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  height: 50px;
+  width: 50px;
+  background: var(--green);
+  color: white;
+  border-radius: 100%;
+  border: none;
+  padding: 10px;
+  z-index: 99;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

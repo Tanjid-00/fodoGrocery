@@ -1,0 +1,54 @@
+footer {
+  overflow: hidden;
+}
+footer a:hover {
+  border-bottom: 1px solid gray;
+}
+
+#upperFooter {
+  background: #172029;
+}
+#upperPart {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.emailIcon {
+  font-size: 4rem;
+}
+#emailInp {
+  background: #233241;
+  outline: none;
+  border: none;
+}
+#subsBtn {
+  background: green;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  #emailInp {
+    width: 400px;
+  }
+}
+
+/* ---------- Lowerpart */
+#lowerFooter {
+  background: black;
+}
+#lowerPart {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+#lowerPart a {
+  text-decoration: none;
+  color: #6c757d;
+}
+#lowerPart i {
+  color: green;
+}
+
+#payImg img {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+}
